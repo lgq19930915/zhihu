@@ -1,0 +1,86 @@
+@import '../../stylus/index';
+
+.detail {
+    width 100vw;
+
+    .top_nav {
+        box-sizing border-box;
+        padding 0.3rem;
+        width 100%;
+        height 1rem;
+        background $primary;
+
+        .fenxiang {
+            display inline-block;
+            margin -0.1rem 0.3rem 0 1.7rem;
+            width 0.4rem;
+            height 0.4rem;
+            background url('../../assets/font/fenxiang.svg') no-repeat;
+            background-size 100%;
+            vertical-align middle;
+        }
+
+        .qxshoucang {
+            display inline-block;
+            margin -0.1rem 0 0 0.4rem;
+            width 0.4rem;
+            height 0.4rem;
+            background url('../../assets/font/shoucang/schuangse.svg') no-repeat;
+            background-size 100%;
+            vertical-align middle;
+        }
+
+        .shoucang {
+            display inline-block;
+            margin -0.1rem 0 0 0.4rem;
+            width 0.4rem;
+            height 0.4rem;
+            background url('../../assets/font/shoucang/scbaise.svg') no-repeat;
+            background-size 100%;
+            vertical-align middle;
+        }
+
+        .pinglun {
+            display inline-block;
+            margin -0.1rem 0.5rem 0 0.3rem;
+            width 0.4rem;
+            height 0.4rem;
+            background url('../../assets/font/pinglun.svg') no-repeat;
+            background-size 100%;
+            vertical-align middle;
+
+            i {
+                margin-left 0.5rem;
+                color #fff;
+            }
+        }
+
+        .dianzan {
+            display inline-block;
+            margin -0.1rem 0 0 0;
+            width 0.4rem;
+            height 0.4rem;
+            background url('../../assets/font/dianzan.svg') no-repeat;
+            background-size 100%;
+            vertical-align middle;
+        }
+    }
+
+    .detail_title {
+        position absolute;
+        top 3rem;
+        z-index 3;
+        margin 1rem;
+        color #fff;
+        font-size 0.4rem;
+        opacity 0.9;
+    }
+
+    .detail_img {
+        position absolute;
+        top 1rem;
+        left 0;
+        width 100%;
+        height 200px;
+    }
+}

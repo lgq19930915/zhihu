@@ -1,0 +1,253 @@
+@import '../../stylus/index.styl';
+
+.am-drawer-content {
+    position static !important;
+    touch-action none;
+}
+
+.box {
+    touch-action none;
+
+    .am-drawer {
+        position static !important;
+
+        .top {
+            position fixed;
+            z-index 9;
+            display flex;
+            justify-content space-between;
+            padding 0.3rem;
+            width 100vw;
+            background-color $primary;
+
+            .top_left {
+                .xuanxiang {
+                    display inline-block;
+                    margin-right 0.3rem;
+                    width 0.4rem;
+                    height 0.4rem;
+                    background url('../../assets/font/xuanxiang.svg') no-repeat;
+                    background-size 100%;
+                    vertical-align middle;
+                }
+
+                h1 {
+                    display inline-block;
+                    color #fff;
+                    vertical-align middle;
+                    font-size 0.3rem;
+                }
+            }
+
+            .top_right {
+                margin-top 0.2rem;
+
+                .lingdang {
+                    display inline-block;
+                    margin-right 0.3rem;
+                    width 0.4rem;
+                    height 0.4rem;
+                    background url('../../assets/font/lingdang.svg') no-repeat;
+                    background-size 100%;
+                    vertical-align middle;
+                }
+
+                .sandian {
+                    display inline-block;
+                    margin-right 0.3rem;
+                    width 0.4rem;
+                    height 0.4rem;
+                    background #fff;
+                    background url('../../assets/font/sandan.svg') no-repeat;
+                    background-size 100%;
+                    vertical-align middle;
+                }
+            }
+        }
+
+        // 抽屉左边
+        .sidebar {
+            padding-top 1.3rem;
+            width 85vw;
+            height 100vh;
+            background-color #fff;
+
+            a {
+                color #fff;
+            }
+
+            .headPhoto {
+                padding 0.5rem;
+                background $primary;
+
+                img {
+                    width 1rem;
+                    height 1rem;
+                    border-radius 50%;
+                    vertical-align middle;
+                }
+
+                span {
+                    padding 0.2rem;
+                    color #fff;
+                    vertical-align middle;
+                }
+            }
+
+            .center {
+                display flex;
+                margin-top -0.01rem;
+                padding-top 0.4rem;
+                padding-bottom 0.3rem;
+                background $primary;
+                color #fff;
+
+                .c_left {
+                    padding 0 0.4rem;
+                    vertical-align middle;
+                    font-size 0.3rem;
+
+                    .xingxing {
+                        display inline-block;
+                        margin-top -0.1rem;
+                        margin-right 0.3rem;
+                        width 0.4rem;
+                        height 0.4rem;
+                        background url('../../assets/font/xingxing.svg') no-repeat;
+                        background-size 100%;
+                        vertical-align middle;
+                    }
+                }
+
+                .c_right {
+                    padding 0 0.4rem;
+                    vertical-align middle;
+                    font-size 0.3rem;
+
+                    .lixiandownlond {
+                        display inline-block;
+                        margin-right 0.3rem;
+                        width 0.4rem;
+                        height 0.4rem;
+                        background url('../../assets/font/lixiandownlond.svg') no-repeat;
+                        background-size 100%;
+                        vertical-align middle;
+                    }
+                }
+            }
+
+            .btm {
+                padding 0.3rem;
+                background $gray;
+
+                .fangzi {
+                    display inline-block;
+                    margin-top -0.1rem;
+                    margin-right 0.3rem;
+                    width 0.4rem;
+                    height 0.4rem;
+                    background url('../../assets/font/fangzi.svg') no-repeat;
+                    background-size 100%;
+                    vertical-align middle;
+                }
+
+                .index {
+                    color #0278fd;
+                    font-size 0.3rem;
+                }
+            }
+        }
+
+        // 内容区
+        .con {
+            width 100vw;
+            background #f1f1f1;
+
+            a {
+                color #000;
+            }
+
+            p {
+                padding 20px;
+                color #999;
+            }
+
+            .content {
+                display flex;
+                margin-bottom 0.3rem;
+                margin-left 4vw;
+                width 90vw;
+                height 3rem;
+                s;
+                background-color #fff;
+
+                .title {
+                    padding 0.4rem;
+                    width 35vw;
+                    font-weight 900;
+                    font-size 0.3rem;
+                }
+
+                .c-img {
+                    margin 0.5rem;
+                    width 1rem;
+                    height 2rem;
+
+                    img {
+                        margin-right 1rem;
+                        width 2.1rem;
+                        height 1.8rem;
+                        touch-action none;
+                    }
+                }
+            }
+        }
+
+        .before {
+            // height 100vh;
+            margin-bottom 0.3rem;
+            width 100vw;
+            background #f7f7f7;
+
+            a {
+                color #000;
+            }
+
+            .before_time {
+                margin-left 4vw;
+                padding 20px;
+                width 90vw;
+                color #999;
+            }
+
+            .before_con {
+                display flex;
+                margin-bottom 0.3rem;
+                margin-left 4vw;
+                width 90vw;
+                height 3rem;
+                background-color #fff;
+
+                .before_title {
+                    padding 0.4rem;
+                    width 35vw;
+                    font-weight 900;
+                    font-size 0.3rem;
+                }
+
+                .before_img {
+                    margin 0.5rem;
+                    width 1rem;
+                    height 2rem;
+
+                    img {
+                        margin-right 1rem;
+                        width 2.1rem;
+                        height 1.8rem;
+                        touch-action none;
+                    }
+                }
+            }
+        }
+    }
+}
